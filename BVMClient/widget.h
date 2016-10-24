@@ -10,6 +10,7 @@
 #include <QTimerEvent>
 #include <QPainter>
 #include "Global.h"
+#include "RWidget.h"
 
 #include <QThread>
 namespace Ui {

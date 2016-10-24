@@ -37,7 +37,11 @@ SOURCES += main.cpp\
     ../Common.cpp \
     StageSelectProduct.cpp \
     ItemBtnProduct.cpp \
-    LayerProductContent.cpp
+    LayerProductContent.cpp \
+    RWidget.cpp \
+    ItemLbImage.cpp \
+    ItemGuide.cpp \
+    DataProduct.cpp
 
 HEADERS  += widget.h \
     StageStart.h \
@@ -47,12 +51,16 @@ HEADERS  += widget.h \
     ../Common.h \
     StageSelectProduct.h \
     ItemBtnProduct.h \
-    LayerProductContent.h
+    LayerProductContent.h \
+    RWidget.h \
+    ItemLbImage.h \
+    ItemGuide.h \
+    DataProduct.h
 
 FORMS    += widget.ui \
     StageStart.ui \
     StageSelectProduct.ui \
-    ItemBtnProduct.ui \
-    LayerProductContent.ui
+    LayerProductContent.ui \
+    ItemGuide.ui
 
 RESOURCES +=

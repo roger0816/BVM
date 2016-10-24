@@ -31,7 +31,7 @@
    </property>
    <item row="0" column="0">
     <widget class="QWidget" name="wBg" native="true">
-     <layout class="QGridLayout" name="gridLayout_2" rowstretch="4,1,0" rowminimumheight="4,1,0">
+     <layout class="QGridLayout" name="gridLayout_2" rowstretch="8,3,1" rowminimumheight="8,3,1">
       <property name="leftMargin">
        <number>0</number>
       </property>
@@ -68,18 +68,36 @@
          <item row="0" column="1">
           <widget class="QWidget" name="widget_2" native="true">
            <layout class="QGridLayout" name="gridLayout_4">
+            <property name="leftMargin">
+             <number>0</number>
+            </property>
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <property name="bottomMargin">
+             <number>0</number>
+            </property>
+            <property name="spacing">
+             <number>0</number>
+            </property>
             <item row="0" column="0">
              <widget class="QLabel" name="label">
               <property name="font">
                <font>
                 <family>Aharoni</family>
-                <pointsize>28</pointsize>
-                <weight>75</weight>
-                <bold>true</bold>
+                <pointsize>14</pointsize>
+                <weight>50</weight>
+                <bold>false</bold>
                </font>
               </property>
               <property name="text">
-               <string>博德股份有限公司</string>
+               <string>博格股份有限公司</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
               </property>
              </widget>
             </item>
@@ -92,23 +110,26 @@
         </layout>
        </widget>
       </item>
+      <item row="1" column="0">
+       <widget class="QWidget" name="wEnd" native="true"/>
+      </item>
       <item row="0" column="0">
        <widget class="QWidget" name="wBody" native="true">
         <layout class="QGridLayout" name="gridLayout_5">
          <property name="leftMargin">
-          <number>10</number>
+          <number>80</number>
          </property>
          <property name="topMargin">
-          <number>10</number>
+          <number>20</number>
          </property>
          <property name="rightMargin">
-          <number>10</number>
+          <number>80</number>
          </property>
          <property name="bottomMargin">
-          <number>10</number>
+          <number>0</number>
          </property>
          <property name="horizontalSpacing">
-          <number>10</number>
+          <number>0</number>
          </property>
          <item row="0" column="0" colspan="2">
           <widget class="QStackedWidget" name="stackedWidget">
@@ -124,39 +145,6 @@
            <widget class="LayerVideo" name="wVideo"/>
            <widget class="LayerPhoto" name="wPhoto"/>
           </widget>
-         </item>
-        </layout>
-       </widget>
-      </item>
-      <item row="1" column="0">
-       <widget class="QWidget" name="widget" native="true">
-        <layout class="QGridLayout" name="gridLayout_6">
-         <item row="0" column="0">
-          <widget class="QWidget" name="w0_0" native="true"/>
-         </item>
-         <item row="0" column="1">
-          <widget class="QWidget" name="w1_0" native="true"/>
-         </item>
-         <item row="0" column="2">
-          <widget class="QWidget" name="w2_0" native="true"/>
-         </item>
-         <item row="1" column="0">
-          <widget class="QWidget" name="w0_1" native="true"/>
-         </item>
-         <item row="1" column="1">
-          <widget class="QWidget" name="w1_1" native="true"/>
-         </item>
-         <item row="1" column="2">
-          <widget class="QWidget" name="w2_1" native="true"/>
-         </item>
-         <item row="2" column="0">
-          <widget class="QWidget" name="w0_2" native="true"/>
-         </item>
-         <item row="2" column="1">
-          <widget class="QWidget" name="w1_2" native="true"/>
-         </item>
-         <item row="2" column="2">
-          <widget class="QWidget" name="w2_2" native="true"/>
          </item>
         </layout>
        </widget>

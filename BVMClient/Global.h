@@ -68,7 +68,7 @@ public:
     void loadConfig();
 
 
-
+    int m_iStayMsec;
 
 
 

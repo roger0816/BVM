@@ -34,6 +34,6 @@ void Global::changeStage(Stage::index index)
 
 Global::Global()
 {
-
+    m_iStayMsec=6000;
 }
 

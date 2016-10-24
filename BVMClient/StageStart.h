@@ -7,6 +7,7 @@
 #include <QResizeEvent>
 #include <QLabel>
 #include <QTimerEvent>
+#include "ItemGuide.h"
 namespace Ui {
 class StageStart;
 }
@@ -28,6 +29,8 @@ public:
     QVector<QLabel*> m_listIcon;
 
     void timerEvent(QTimerEvent *);
+
+    ItemGuide *m_itemGuide;
 
     int m_iFocusIdx;
 signals:

@@ -8,11 +8,15 @@ int main(int argc, char *argv[])
     QApplication a(argc, argv);
 
     Widget w;
-
-    w.resize(w.size()/10*4);
-  //  w.resize(1920,1080);
+  w.resize(1080,1920);
+    w.resize(w.size()*0.96);
 
     w.show();
+
+
+
+
+
 
     return a.exec();
 }

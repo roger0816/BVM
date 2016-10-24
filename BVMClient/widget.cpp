@@ -15,6 +15,8 @@ Widget::Widget(QWidget *parent) :
 
     m_iStageIdx=Stage::_start;
 
+//    ui->wBg->setStyleSheet(QStringLiteral("QWidget#wBg{border-image:url(res/Background/bk-01.png);}"));
+
     connect(&GLOBAL(),SIGNAL(siganlStage(Stage::index)),this,SLOT(stageFilter(Stage::index)));
 
 
@@ -43,7 +45,7 @@ Widget::~Widget()
 void Widget::resizeEvent(QResizeEvent *)
 {
 
-  //  m_wBg->setGeometry(rect());
+    //  m_wBg->setGeometry(rect());
 
     m_stageStart->setGeometry(rect());
 
@@ -57,17 +59,17 @@ void Widget::resizeEvent(QResizeEvent *)
 
 
     //resize(1440,768);
-   // m_wBg ->resize(500,500);
-//    QRectF r = form->boundingRect();
-//    for(int i=1;i<=180;i++)
-//    {
-//       form->setTransform(QTransform()
-//                           .translate(r.width() / 2, r.height() / 2)
-//                           .rotate(i - 360 * 1, Qt::YAxis)
-//                           .translate(-r.width() / 2, -r.height() / 2));
-//        sleep(20);
-//        this->update();
-//    }
+    // m_wBg ->resize(500,500);
+    //    QRectF r = form->boundingRect();
+    //    for(int i=1;i<=180;i++)
+    //    {
+    //       form->setTransform(QTransform()
+    //                           .translate(r.width() / 2, r.height() / 2)
+    //                           .rotate(i - 360 * 1, Qt::YAxis)
+    //                           .translate(-r.width() / 2, -r.height() / 2));
+    //        sleep(20);
+    //        this->update();
+    //    }
 
 
 
@@ -76,6 +78,8 @@ void Widget::resizeEvent(QResizeEvent *)
 
 void Widget::mousePressEvent(QMouseEvent *event)
 {
+    qDebug()<<"AAA";
+
     if(event->pos().x()<=TOUCH_RANGE && event->pos().y()>= height()-TOUCH_RANGE)
         m_iPressTime=0;
 }
@@ -166,7 +170,7 @@ void Widget::on_btnManager_pressed()
 
 void Widget::sleep(unsigned int msec)
 {
-        QTime dieTime = QTime::currentTime().addMSecs(msec);
-        while( QTime::currentTime() < dieTime )
+    QTime dieTime = QTime::currentTime().addMSecs(msec);
+    while( QTime::currentTime() < dieTime )
         QCoreApplication::processEvents(QEventLoop::AllEvents, 100);
 }
